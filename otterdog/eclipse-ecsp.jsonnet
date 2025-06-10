@@ -35,11 +35,11 @@ orgs.newOrg('automotive.ecsp', 'eclipse-ecsp') {
     orgs.newOrgSecret('GPG_SUBKEY_ID') {
       value: "pass:bots/automotive.ecsp/gpg/subkey_id",
     },
-    orgs.newOrgSecret('OSSRH_PASSWORD') {
-      value: "pass:bots/automotive.ecsp/oss.sonatype.org/gh-token-password",
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_PASSWORD') {
+      value: "pass:bots/automotive.ecsp/central.sonatype.org/token-password",
     },
-    orgs.newOrgSecret('OSSRH_USERNAME') {
-      value: "pass:bots/automotive.ecsp/oss.sonatype.org/gh-token-username",
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_USERNAME') {
+      value: "pass:bots/automotive.ecsp/central.sonatype.org/token-username",
     },
   ],
   _repositories+:: [
